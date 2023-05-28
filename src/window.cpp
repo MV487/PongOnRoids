@@ -1,6 +1,6 @@
-#include "window.h"
+#include "Window.hpp"
 #include <raylib.h>
-#include "gameLoop.h"
+#include "GameLoop.hpp"
 
 Window::Window(int width, int height, const char* name) : m_width{width}, m_height{height}, m_name{name}
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include "window.h"
+#include "Window.hpp"
 #include "raylib.h"
 #include "Math.hpp"
 class Object
