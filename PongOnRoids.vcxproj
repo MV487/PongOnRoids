@@ -152,22 +152,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Ball.cpp" />
-    <ClCompile Include="src\gameLoop.cpp" />
+    <ClCompile Include="src\GameLoop.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Math.cpp" />
     <ClCompile Include="src\Object.cpp" />
-    <ClCompile Include="src\paddle.cpp" />
-    <ClCompile Include="src\window.cpp" />
+    <ClCompile Include="src\Paddle.cpp" />
+    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Ball.h" />
+    <ClInclude Include="src\Ball.hpp" />
     <ClInclude Include="src\gameLoop.h" />
+    <ClInclude Include="src\GameLoop.hpp" />
     <ClInclude Include="src\Input.hpp" />
     <ClInclude Include="src\Math.hpp" />
     <ClInclude Include="src\Object.hpp" />
     <ClInclude Include="src\paddle.h" />
+    <ClInclude Include="src\Paddle.hpp" />
     <ClInclude Include="src\Utility.hpp" />
     <ClInclude Include="src\window.h" />
+    <ClInclude Include="src\Window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
