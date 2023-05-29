@@ -1,4 +1,4 @@
-#include "paddle.h"
+#include "Paddle.hpp"
 #include "raylib.h"
 #include "Utility.hpp"
 Paddle::Paddle(const vec2d& position, int width, int height, int speed) : m_location{ position }, m_width{ width }, m_height { height }, m_speedx{ speed }, m_speedy{ speed }

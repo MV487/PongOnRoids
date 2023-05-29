@@ -1,8 +1,8 @@
-#include "gameLoop.h"
-#include "window.h"
+#include "GameLoop.hpp"
+#include "Window.hpp"
 #include "Math.hpp"
-#include "Ball.h"
-#include "paddle.h"
+#include "Ball.hpp"
+#include "Paddle.hpp"
 #include "Utility.hpp"
 
 

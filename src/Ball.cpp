@@ -1,5 +1,5 @@
-#include "Ball.h"
-#include "window.h"
+#include "Ball.hpp"
+#include "Window.hpp"
 #include "Utility.hpp"
 Ball::Ball(const vec2d& postion, float radius, int speed) : m_location{ postion }, m_radius{ radius }, m_speedx{ speed }, m_speedy{speed}
 {
