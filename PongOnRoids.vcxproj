@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AIPaddle.cpp" />
     <ClCompile Include="src\Ball.cpp" />
     <ClCompile Include="src\GameLoop.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AIPaddle.hpp" />
     <ClInclude Include="src\Ball.h" />
     <ClInclude Include="src\Ball.hpp" />
     <ClInclude Include="src\gameLoop.h" />

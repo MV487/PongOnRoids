@@ -4,6 +4,7 @@
 #include "Ball.hpp"
 #include "Paddle.hpp"
 #include "Utility.hpp"
+#include "AIPaddle.hpp"
 
 
 void GameLoop::run()
@@ -11,8 +12,8 @@ void GameLoop::run()
     Window win;
 
 	Ball ball{ vec2d (utility::get_window_width()/2, utility::get_window_height()/2), 20.0f, 7};
-    Paddle player1{ vec2d(0, utility::get_window_height()/ 2 - 60), 25, 120,10};
-    //Paddle player2{ vec2d(utility::get_window_width()-35, utility::get_window_height() / 2 - 60), 25, 120,2};
+    Paddle player1{ vec2d(0, utility::get_window_height()/ 2 - 60), 40, 190,10};
+    AIPaddle AI{ vec2d(utility::get_window_width()-35, utility::get_window_height() / 2 - 60), 40, 190,2};
     
     while (!win.should_close())
 	{
@@ -25,7 +26,7 @@ void GameLoop::run()
 
         ball.update();
         player1.update();
-        //player2.update();
+        AI.update(); 
 
 
         win.end_drawing();

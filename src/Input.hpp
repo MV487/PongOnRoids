@@ -3,7 +3,9 @@
 #include "Math.hpp"
 #include "Utility.hpp"
 
-static void input(vec2d & location, int width, int height, int speedx, int speedy)
+namespace input {
+
+static void key_bindingT1(vec2d & location, int width, int height, int speedx, int speedy)
 {
 	if (IsKeyDown(KEY_DOWN) && !(location.y +height >= utility::get_window_height())) {
 		location.y += speedy;
@@ -24,5 +26,6 @@ static void input(vec2d & location, int width, int height, int speedx, int speed
 		location.x -= speedx;
 	}
 
+}
 }
 
