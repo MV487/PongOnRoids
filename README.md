@@ -12,7 +12,7 @@ cd .\vcpkg\bootstrap-vcpkg.bat
 	
 ## TODO:
 ---
-- [ ] improve the ball physics and ai movement
+- [ ] improve the ball collision, physics and ai movement
 - [ ] add win and lose screen
 - [ ] add multiplayer (4 - 6 players)
 - [ ] add LAN multiplayer
