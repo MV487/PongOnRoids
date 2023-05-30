@@ -120,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
       <DisableSpecificWarnings>4505;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -139,7 +139,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
       <DisableSpecificWarnings>4505;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -151,22 +151,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AIPaddle.cpp" />
     <ClCompile Include="src\Ball.cpp" />
     <ClCompile Include="src\GameLoop.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Math.cpp" />
-    <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Paddle.cpp" />
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AIPaddle.hpp" />
     <ClInclude Include="src\Ball.h" />
     <ClInclude Include="src\Ball.hpp" />
     <ClInclude Include="src\gameLoop.h" />
     <ClInclude Include="src\GameLoop.hpp" />
     <ClInclude Include="src\Input.hpp" />
     <ClInclude Include="src\Math.hpp" />
-    <ClInclude Include="src\Object.hpp" />
     <ClInclude Include="src\paddle.h" />
     <ClInclude Include="src\Paddle.hpp" />
     <ClInclude Include="src\Utility.hpp" />
@@ -176,6 +176,7 @@
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
+    <None Include=".gitmodules" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

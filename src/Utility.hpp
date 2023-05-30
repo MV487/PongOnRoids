@@ -9,7 +9,7 @@ namespace utility {
 		return GetScreenWidth();
 	}
 	
-
+	
 
 
 }

@@ -27,13 +27,13 @@
     <ClCompile Include="src\Math.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Object.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Paddle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AIPaddle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,9 +48,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Math.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Object.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\paddle.h">
@@ -74,11 +71,15 @@
     <ClInclude Include="src\GameLoop.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\AIPaddle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
     <None Include="README.md" />
+    <None Include=".gitmodules" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LICENSE.txt" />
