@@ -47,7 +47,7 @@ void GameLoop::check_win(Ball & ball, Paddle& player, AIPaddle&AI)
 
 		player.reset();
 		AI.reset();
-			ball.reset_ball();
+		ball.reset_ball();
 	}
 
 	if ((ball.get_location().x -  ball.get_radius() <= 0))

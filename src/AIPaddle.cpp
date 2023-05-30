@@ -37,7 +37,7 @@ void AIPaddle::ai_movement_easy(const vec2d&ball_location)
 	{
 		m_location.y -= m_speedy;
 	}
-	if (!(m_location.x+m_width < utility::get_window_width()/2))
+	if (!(m_location.x < utility::get_window_width()/2))
 	{
 		m_location.x -= m_speedx;
 	}

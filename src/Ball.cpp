@@ -51,15 +51,16 @@ void Ball::check_collision(Paddle& obj)
 	//auto normalizedRelativeIntersectionY = (relative_intersectY / (obj.get_height() / 2));
 	//auto bounceAngle = normalizedRelativeIntersectionY * 65;
 
-	if (CheckCollisionCircleRec(Vector2{ static_cast<float>(m_location.x),static_cast<float>(m_location.y) }, (m_radius),
+	if (CheckCollisionCircleRec(Vector2{ static_cast<float>(m_location.x),static_cast<float>(m_location.y) }, (m_radius*4),
 		Rectangle{ static_cast<float>(obj.get_posX()),static_cast<float>(obj.get_posY()), static_cast<float>(obj.get_width()),static_cast<float>(obj.get_height()) }
 	))
 	{
 		if (m_speedx < 0)
 		{
 			m_speedx *= -1.6f;
-		m_speedy = (m_location.y - obj.get_posY()) / (obj.get_height()/ 2) * m_speedx;
+			m_speedy = (m_location.y - obj.get_posY()) / (obj.get_height()/ 2) * m_speedx;
 		}
+
 
 	}
 }
