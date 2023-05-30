@@ -27,8 +27,8 @@ void GameLoop::run()
         ball.update();
         player1.update();
         AI.update(ball.get_location()); 
-       /* AI.ai_movement(ball.get_location());*/
-
+        ball.check_collision(AI);
+        ball.check_collision(player1);
 
 
         win.end_drawing();

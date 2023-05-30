@@ -1,5 +1,6 @@
 #pragma once
 #include "Input.hpp"
+#include "raylib.h"
 class Paddle {
 	
 
@@ -10,6 +11,11 @@ public:
 	void draw(const vec2d&pos);
 public:
 	void update();
+	int get_width();
+	int get_height();
+	int get_posX();
+	int get_posY();
+
 private:
 	void (*handle_input)(vec2d& location, int width, int height, int speedx, int speedy) = nullptr;
 

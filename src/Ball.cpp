@@ -1,6 +1,7 @@
 #include "Ball.hpp"
 #include "Window.hpp"
 #include "Utility.hpp"
+#include "Paddle.hpp"
 Ball::Ball(const vec2d& postion, float radius, int speed) : m_location{ postion }, m_radius{ radius }, m_speedx{ speed }, m_speedy{speed}
 {
 	
@@ -36,6 +37,22 @@ void Ball::collide_screen()
 vec2d& Ball::get_location()
 {
 	return m_location;
+}
+
+float Ball::get_radius()
+{
+	return m_radius;
+}
+
+void Ball::check_collision(Paddle& obj )
+{
+
+        if (CheckCollisionCircleRec(Vector2{static_cast<float>(m_location.x),static_cast<float>(m_location.y) }, m_radius,
+			Rectangle{static_cast<float>(obj.get_posX()),static_cast<float>(obj.get_posY()), static_cast<float>(obj.get_width()),static_cast<float>(obj.get_height())}
+		))
+        {
+			m_speedx *= -1;
+        }
 }
 
 

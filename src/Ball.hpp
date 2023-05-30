@@ -1,5 +1,6 @@
 #pragma once
 #include "Math.hpp"
+#include "Paddle.hpp"
 class Ball {
 	
 
@@ -12,7 +13,8 @@ public:
 	void update();
 	void collide_screen();
 	vec2d& get_location();
-	
+	float get_radius();
+	void check_collision(Paddle&obj);
 private:
 	vec2d m_location;
 	float m_radius;

@@ -28,14 +28,23 @@ void AIPaddle::update(const vec2d&ball_location)
 
 void AIPaddle::ai_movement_easy(const vec2d&ball_location)
 {
-	if (m_location.y + m_height /2 > ball_location.y)
-	{
-		m_location.y -= m_speedy;
-	}
-	if (m_location.y + m_height /2 <= ball_location.y)
+	if (m_location.y + m_height /2 > ball_location.y and !(m_location.y + m_height >= utility::get_window_height()))
 	{
 		m_location.y += m_speedy;
 	}
+	if (m_location.y + m_height /2 <= ball_location.y and !(m_location.y <= 0))
+	{
+		m_location.y -= m_speedy;
+	}
+	if (m_location.x + m_width * 5 < ball_location.x  && !(m_location.x+m_width >= utility::get_window_width()))
+	{
+		m_location.x += m_speedx;
+	}
+	if (!(m_location.x+m_width <= utility::get_window_width()/2))
+	{
+		m_location.x -= m_speedx;
+	}
+
 }
 
 void AIPaddle::move(const vec2d&ball_location)

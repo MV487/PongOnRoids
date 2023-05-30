@@ -3,12 +3,12 @@
 #include "Math.hpp"
 #include "Ball.hpp"
 
-	enum class DiffcultyType
-	{
-		Easy,
-		Medium,
-		Hard
-	};
+enum class DiffcultyType
+{
+	Easy,
+	Medium,
+	Hard
+};
 
 class AIPaddle :public Paddle
 {
