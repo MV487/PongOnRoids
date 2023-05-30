@@ -1,7 +1,10 @@
 #include "Paddle.hpp"
 #include "raylib.h"
 #include "Utility.hpp"
-Paddle::Paddle(const vec2d& position, int width, int height, int speed) : m_location{ position }, m_width{ width }, m_height { height }, m_speedx{ speed }, m_speedy{ speed }
+Paddle::Paddle(const vec2d& position, int width, int height, int speed) 
+	: m_location{ position }, m_width{ width },
+	  m_height { height }, m_speedx{ speed }, 
+	  m_speedy{ speed },m_score{0}
 {
 	handle_input = input::key_bindingT1;
 }
@@ -30,6 +33,11 @@ int Paddle::get_height()
 int Paddle::get_posY()
 {
 	return m_location.y;
+}
+void Paddle::reset()
+{
+	m_location.x = 0;
+		m_location.y = utility::get_window_height() / 2 - 60;
 }
 int Paddle::get_posX()
 {

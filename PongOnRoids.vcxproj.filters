@@ -79,6 +79,7 @@
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
     <None Include="README.md" />
+    <None Include=".gitmodules" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LICENSE.txt" />

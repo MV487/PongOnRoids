@@ -1,6 +1,7 @@
 #pragma once
 #include "Math.hpp"
 #include "Paddle.hpp"
+#include <vector>
 class Ball {
 	
 
@@ -15,6 +16,7 @@ public:
 	vec2d& get_location();
 	float get_radius();
 	void check_collision(Paddle&obj);
+	void reset_ball();
 private:
 	vec2d m_location;
 	float m_radius;
