@@ -1,7 +1,6 @@
 #pragma once
 #include "Math.hpp"
-#include "Object.hpp"
-class Ball : public Object{
+class Ball {
 	
 
 public:
@@ -9,10 +8,11 @@ public:
 	Ball(const Ball& rhs) = delete;
 	Ball(const Ball&&) = delete;
 public:
-	void draw(const vec2d&pos) override;
-	void update() override;
+	void draw(const vec2d&pos);
+	void update();
 	void collide_screen();
-
+	vec2d& get_location();
+	
 private:
 	vec2d m_location;
 	float m_radius;

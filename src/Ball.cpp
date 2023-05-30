@@ -33,3 +33,11 @@ void Ball::collide_screen()
 
 }
 
+vec2d& Ball::get_location()
+{
+	return m_location;
+}
+
+
+
+

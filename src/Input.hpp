@@ -27,5 +27,9 @@ static void key_bindingT1(vec2d & location, int width, int height, int speedx, i
 	}
 
 }
+	
+
+
+
 }
 
