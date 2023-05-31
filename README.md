@@ -3,6 +3,12 @@
     <img src="https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif" alt="GIF" width="800" height="500"  />
 </p>
 
+## Controls
+
+| Input                        | Action                |
+|-------------------------------|----------------------|
+| ← → ↑ ↓           | Move                           |
+
 ## Install guide
 
 ### Windows:
