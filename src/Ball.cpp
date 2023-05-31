@@ -5,7 +5,6 @@
 #include <iostream>
 Ball::Ball(const vec2d& postion, float radius, int speed) : m_location{ postion }, m_radius{ radius }, m_speedx{ speed }, m_speedy{ speed }
 {
-	m_speedx -= 1.5;
 }
 
 void Ball::draw(const vec2d& pos)
