@@ -12,7 +12,7 @@ vcpkg.exe integrate install
 	
 ## TODO:
 ---
-- [ ] improve the ball collision, physics and ai movement
+- [x] improve the ball collision, physics and ai movement
 - [ ] switch to cmake
 - [ ] add win and lose screen
 - [ ] add multiplayer (4 - 6 players)
