@@ -13,10 +13,7 @@ void GameLoop::run()
 	Ball ball{ vec2d(utility::get_window_width() / 2, utility::get_window_height() / 2), 20.0f, 7 };
 	Paddle player1{ vec2d(0, utility::get_window_height() / 2 - 60), 40, 190,10 };
 	AIPaddle AI{ vec2d(utility::get_window_width() - 35, utility::get_window_height() / 2 - 60), 40, 190,10, DiffcultyType::Easy };
-	std::vector <Paddle> players = {  AI, player1 };
 	
-	int player_score{};
-	int AI_score{};
 	while (!win.should_close())
 	{
 
