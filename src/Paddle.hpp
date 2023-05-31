@@ -16,10 +16,13 @@ public:
 	int get_posX();
 	int get_posY();
 	void reset();
+	const int get_score() const;
+	void add_score();
+			
 
 private:
 	void (*handle_input)(vec2d& location, int width, int height, int speedx, int speedy) = nullptr;
-
+	
 protected:
 	vec2d m_location;
 	int m_width;
