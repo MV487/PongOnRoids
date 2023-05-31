@@ -39,6 +39,14 @@ void Paddle::reset()
 	m_location.x = 0;
 		m_location.y = utility::get_window_height() / 2 - 60;
 }
+const int Paddle::get_score() const
+{
+	return m_score;
+}
+void Paddle::add_score()
+{
+	m_score +=1;
+}
 int Paddle::get_posX()
 {
 	return m_location.x;
