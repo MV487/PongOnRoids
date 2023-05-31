@@ -4,7 +4,7 @@ class Window
 {
 	static inline constexpr int window_width{ 1920};
 	static inline constexpr int window_height{ 1080 };
-	static inline const char* window_name{ "pong++" };
+	static inline const char* window_name{ "PongOnRoids" };
 public:
 	explicit Window(int width = window_width, int height = window_height, const char* name = window_name);
 	~Window();

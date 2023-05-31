@@ -4,7 +4,6 @@
 class GameLoop
 {
 private:
-	void draw_scores(const std::vector<Paddle>players);
 
 public:
 	static void run();
