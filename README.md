@@ -1,5 +1,7 @@
 # PongOnRoids
-![](https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif)
+<div style="text-align: center;">
+    <img src="https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif" />
+</div>
 ## Install guide
 
 ### Windows:
