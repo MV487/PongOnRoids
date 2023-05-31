@@ -47,7 +47,7 @@ void GameLoop::check_win(Ball & ball, Paddle& player, AIPaddle&AI)
 {
 	if (ball.get_location().x + ball.get_radius() >= GetScreenWidth()) 	{
 		
-		player.add_score();
+		AI.add_score();
 		player.reset();
 		AI.reset();
 		ball.reset_ball();
@@ -55,7 +55,7 @@ void GameLoop::check_win(Ball & ball, Paddle& player, AIPaddle&AI)
 
 	if ((ball.get_location().x -  ball.get_radius() <= 0))
 	{
-		AI.add_score();
+		player.add_score();
 		AI.reset();
 		player.reset();
 		ball.reset_ball();

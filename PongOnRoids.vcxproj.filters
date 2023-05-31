@@ -84,4 +84,9 @@
   <ItemGroup>
     <Text Include="LICENSE.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\Untitled video.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
