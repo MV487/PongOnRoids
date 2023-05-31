@@ -1,7 +1,8 @@
 # PongOnRoids
-<div style="text-align: center;">
-    <img src="https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif" />
-</div>
+<p align="center">
+    <img src="https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif" alt="GIF" width="800" height="500"  />
+</p>
+
 ## Install guide
 
 ### Windows:
