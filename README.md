@@ -1,5 +1,5 @@
 # PongOnRoids
-![](https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif)
+					![](https://github.com/MV487/PongOnRoids/blob/master/assets/Untitled%20video.gif)
 ## Install guide
 
 ### Windows:
