@@ -55,14 +55,14 @@ void Ball::check_collision(Paddle& obj)
 		if (m_speedx < 0)
 		{
 			m_speedx *= -1.2f;
-			m_speedy += (m_location.y - obj.get_posY()) / (obj.get_height()/ 2)*25;
+			m_speedy += (m_location.y - obj.get_posY()) / (obj.get_height()/ 2)*5;
 		}
 		
 		
 		else if (m_speedx > 0)
 		{
 			m_speedx *= -1.2f;
-			m_speedy += (m_location.y - obj.get_posY()) / (obj.get_height()/ 2) * 25;
+			m_speedy += (m_location.y - obj.get_posY()) / (obj.get_height()/ 2) * 5;
 
 		}
 
