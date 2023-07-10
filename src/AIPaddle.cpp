@@ -7,6 +7,8 @@ AIPaddle::AIPaddle(const vec2d& position, int width, int height, int speed, Diff
 	{
 	case DiffcultyType::Easy:
 		 ai_movement = &AIPaddle::ai_movement_easy;
+		 m_speedx = 4.5;
+		 m_speedy = 4.5;
 		break;
 	case DiffcultyType::Medium:
 		break;
@@ -35,7 +37,7 @@ void AIPaddle::ai_movement_easy(const vec2d&ball_location)
 	}
 	if (m_location.y + m_height /2 <= ball_location.y/* and !(m_location.y <= 0)*/)
 	{
-		m_location.y += m_speedy;
+		m_location.y += m_speedy -2;
 	}
 	//if (!(m_location.x < utility::get_window_width()/2))
 	//{

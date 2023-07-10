@@ -8,8 +8,5 @@ namespace utility {
 	static int get_window_width() {
 		return GetScreenWidth();
 	}
-	
-	
-
 
 }
