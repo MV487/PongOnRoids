@@ -5,7 +5,7 @@
 
 namespace input {
 
-static void key_bindingT1(vec2d & location, int width, int height, int speedx, int speedy)
+static void key_bindingT1(vec2d & location, int width, int height, float  speedx, float speedy)
 {
 	if (IsKeyDown(KEY_DOWN) && !(location.y +height >= utility::get_window_height())) {
 		location.y += speedy;

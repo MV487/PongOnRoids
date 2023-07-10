@@ -5,7 +5,7 @@ class Paddle {
 	
 
 public:
-	explicit Paddle(const vec2d& postion, int width, int height, int speed);
+	 Paddle(const vec2d& postion, int width, int height, float speed);
 	//Paddle(const Paddle& rhs) = delete;
 	//Paddle(const Paddle&&) = delete;
 	void draw(const vec2d&pos);
@@ -21,13 +21,14 @@ public:
 			
 
 private:
-	void (*handle_input)(vec2d& location, int width, int height, int speedx, int speedy) = nullptr;
+	void (*handle_input)(vec2d& location, int width, int height, float speedx, float speedy) = nullptr;
 	
 protected:
 	vec2d m_location;
 	int m_width;
 	int m_height;
-	int m_speedx;
-	int m_speedy;
+	float m_speedx;
+float	 m_speedy;
+
 	int m_score;
-};
+}; 

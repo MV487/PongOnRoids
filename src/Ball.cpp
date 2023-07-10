@@ -48,23 +48,14 @@ void Ball::check_collision(Paddle& obj)
 {
 
 
-	auto result = CheckCollisionCircleRec(Vector2{ static_cast<float>(m_location.x),static_cast<float>(m_location.y) }, (m_radius*2), Rectangle{ static_cast<float>(obj.get_posX()),static_cast<float>(obj.get_posY()), static_cast<float>(obj.get_width()),static_cast<float>(obj.get_height()) });
-
+	auto result = CheckCollisionCircleRec(Vector2{ m_location.x,m_location.y }, (m_radius), Rectangle{ static_cast<float>(obj.get_posX()),static_cast<float>(obj.get_posY()), static_cast<float>(obj.get_width()),static_cast<float>(obj.get_height()) });
+	int speed_choices[2] = { -1, 1 };
 	
 	if (result)	{
-		if (m_speedx < 0)
-		{
-			m_speedx *= -1.2f;
-			m_speedy += (m_location.y - obj.get_posY()) / (obj.get_height()/ 2)*5;
-		}
-		
-		
-		else if (m_speedx > 0)
-		{
-			m_speedx *= -1.2f;
-			m_speedy += (m_location.y - obj.get_posY()) / (obj.get_height()/ 2) * 5;
 
-		}
+			m_speedx *= -1.2f;
+			m_speedy = 5 * speed_choices[GetRandomValue(0,1)];
+		
 
 
 	}
