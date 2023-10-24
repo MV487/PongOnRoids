@@ -42,4 +42,3 @@
 ---
 ## Future TODO:
 - [ ] add multiplayer (4 - 6 players)
-- [ ] add LAN multiplayer
