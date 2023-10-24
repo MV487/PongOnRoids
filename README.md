@@ -7,26 +7,39 @@
 
 | Input                        | Action                |
 |-------------------------------|----------------------|
-| ← → ↑ ↓           | Move                           |
+| ←  → ↑ ↓           | Move                           |
 
 ## Install guide
 
 ### Windows:
 ```bash
-git clone --recurse-submodules https://github.com/MV487/PongOnRoids.git
-cd vcpkg\bootstrap-vcpkg.bat
-cd vcpkg
-./bootstrap-vcpkg.bat
-vcpkg.exe install raylib:x64-windows
-vcpkg.exe integrate install
+    git clone --recurse-submodules https://github.com/MV487/PongOnRoids.git
+    cd vcpkg\bootstrap-vcpkg.bat
+    cd vcpkg
+    ./bootstrap-vcpkg.bat
+    vcpkg.exe install raylib:x64-windows
+    vcpkg.exe integrate install
 ```
-	
+### Linux (ubuntu)
+```bash
+    git clone --recurse-submodules https://github.com/MV487/PongOnRoids.git
+    cd vcpkg\bootstrap-vcpkg.bat
+    cd vcpkg
+    ./bootstrap-vcpkg.bat
+    vcpkg.exe install raylib:x64-windows
+    vcpkg.exe integrate install
+```
 ## TODO:
 ---
-- [x] improve the ball collision, physics
-- [ ] improve ai movement
-- [ ] switch to cmake
+- [x] switch to cmake
+- [ ] improve the ball collision, physics
+- [ ] improve ai
+- [ ] migrate code to ECS
 - [ ] add win and lose screen
+- [ ] game menu
+- [ ] Documentation
+
+---
+## Future TODO:
 - [ ] add multiplayer (4 - 6 players)
 - [ ] add LAN multiplayer
----
