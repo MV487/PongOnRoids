@@ -26,7 +26,7 @@
     cd vcpkg\bootstrap-vcpkg.sh
     cd vcpkg
     ./bootstrap-vcpkg.bat
-    ./vcpkg.exe install raylib:x64-windows
+    ./vcpkg.exe install raylib
     ./vcpkg integrate install
 ```
 ## TODO:
